@@ -1,0 +1,28 @@
+.App {
+  text-align: center;
+}
+
+.App {
+  background-color: antiquewhite;
+  width: 100vw;
+  height: 100vh;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.home {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
