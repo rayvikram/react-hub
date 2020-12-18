@@ -20,8 +20,8 @@
 1. add the dev dependency from package.json if you want to use prettier with cmd
 2. add the script `prettier \"src/**/*.{js,html}\" --write` in `scripts` in package.json if you want to use prettier with cmd
 3. Add prettier in VS code
-4. enable `format on save` setting in VS code
-5. enable prettier `require config` so that prettier will only format if the project has `.prettierrc` file
+4. enable `format on save` setting in VS code (search in VIEW>PREFERENCE>SETTINGS search)
+5. enable prettier `require config` so that prettier will only format if the project has `.prettierrc` file. (search in VIEW>PREFERENCE>SETTINGS search)
 6. create a file `.prettierrc` with empty object {}
 7. All DONE
 
