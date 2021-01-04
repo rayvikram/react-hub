@@ -1,3 +1,15 @@
+## motive
+
+- In this repo i will try to use all react-features ( hooks, context, HOC, error-boundary, etc) so that i can use this as a reference in future.
+
+## used terms
+
+- context
+- ErrorHandling HOC
+- Prettier & eslint
+- Absolute Imports
+- Dynamic Theme
+
 ## Recommended plugins or practices
 
 ### Plugins / Packages

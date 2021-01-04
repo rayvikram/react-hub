@@ -14,7 +14,7 @@ export default function Layout() {
     <Container fluid style={{ color: theme }}>
       <Navbar bg="light" expand="lg">
         <Link to={URLS.HOME.url}>
-          <Navbar.Brand>Open-Services</Navbar.Brand>
+          <Navbar.Brand>Home</Navbar.Brand>
         </Link>
         <Navbar.Collapse className="justify-content-end">
           <label>
