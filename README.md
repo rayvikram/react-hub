@@ -59,3 +59,22 @@
 
 > `yarn format` - to format the codebase using prettier
 > `yarn build` - to build production version
+
+## testing with Engyme and Zest
+
+- `check navbar.test.js`
+
+- Jest: It is a test runner
+- Enzyme: It is a UI rendering tool
+- Read jest docs https://jestjs.io/ & Engyme docs https://enzymejs.github.io/enzyme/
+
+### WAYS to test class based Component
+
+1. strip out redux dependency by passing props and impliment same way like functional ( Navbar test in src)
+
+### testing reducers
+
+- they are pure function so it is similar to normal functions
+- import specific reducer> jest.describe > it > expect (reducer(undefined, {}).toEqual(initialstate))
+
+###
