@@ -16,8 +16,14 @@ export default function Ifsc({ id }) {
   const [data, setData] = useState(null);
 
   useEffect(() => {
-    Axios.get;
-  }, [setSpinner]);
+    Axios.get(`https://ifsc.razorpay.com/${ifsc}`)
+      .then((res) => {
+        setData(res.data);
+      })
+      .catch((e) => {
+        console.log(e);
+      });
+  }, []);
 
   const clickHandler = () => {
     setSpinner(true);
@@ -44,7 +50,7 @@ export default function Ifsc({ id }) {
       >
         <Card.Title>Bank Details By Ifsc</Card.Title>
         <Card.Body>
-          <InputGroup>
+          <InputGroup data-testid="ifsc-form">
             <FormControl
               value={ifsc}
               onChange={(e) => setIfsc(e.target.value)}
@@ -56,7 +62,7 @@ export default function Ifsc({ id }) {
             </InputGroup.Append>
           </InputGroup>
           {data ? (
-            <div>
+            <div data-testid="ifsc-data">
               <Card.Text>
                 {Object.entries(data).map(([key, value]) => (
                   <span key={key}>

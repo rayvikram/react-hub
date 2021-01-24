@@ -1,3 +1,6 @@
+// IN THIS FILE I HAVE USED ZEST & ENZYME FOR TESTING, AND I NEED TO DO MORE RESEARCH ON
+// WHICH SHOULD I USE JEST+ENGYME OR JEST+REACT-TESTING-LIB
+
 import React from "react";
 import { configure, shallow } from "enzyme";
 import Adapter from "enzyme-adapter-react-16";

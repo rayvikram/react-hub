@@ -4,11 +4,12 @@
 
 ## used features
 
-- context
-- ErrorHandling HOC
+- context - src>context
+- ErrorHandling HOC - src>Layout>UI>Errorboundary.js
 - Prettier & eslint
 - Absolute Imports
-- Dynamic Theme
+- Dynamic Theme - Homepage
+- custom hook - src>Layout>UI>Spinner.js
 
 ## TODO
 
@@ -77,4 +78,11 @@
 - they are pure function so it is similar to normal functions
 - import specific reducer> jest.describe > it > expect (reducer(undefined, {}).toEqual(initialstate))
 
-###
+## Unit test with jest
+
+### API mocks
+
+- https://jestjs.io/docs/en/mock-functions#mocking-modules
+- We dont want to make API calls while test, so we will make **mocks** folder to mock the API
+- While running test, jest will give priority to our created mock library instead of the real one and it will use mock during test.
+-
